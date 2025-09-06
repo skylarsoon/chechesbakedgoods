@@ -2,20 +2,23 @@ import React from 'react';
 import Navbar from '../components/Navbar'
 import CommissionStatus from '../components/CommissionStatus'
 import LocationStatus from '../components/LocationStatus';
+import { Link } from 'react-router-dom'
+
 
 export default function Home () {
     return(
         <>
-            {/* Hero Section */}
-            <section className="bg-lime-50 py-20 text-center font-display">
-                <h2 className="text-4xl font-extrabold mb-4">Happiness for any occasion 🍰</h2>
-                <p className="mb-6 text-lg text-gray-600">Delicious homemade treats made with love.</p>
-                <button className="bg-lime-500 text-white px-6 py-2 rounded-full hover:bg-emerald-600 transition">
-                    See Our Menu
-                </button>
+            <div className='h-[88vh]'> 
+                <section className="relative z-10 py-20 text-center font-display">
+                    <h2 className="text-4xl font-extrabold mb-4">Happiness for any occasion 🍰</h2>
+                    <p className="mb-6 text-lg text-gray-600">Delicious and fully customizable homemade treats made with love.</p>
+                    <Link to="/menu" className="bg-lime-500 text-white px-6 py-2 rounded-full hover:bg-emerald-600 transition">
+                        See Our Menu
+                    </Link>
 
-                <LocationStatus/>
-            </section>
+                    <LocationStatus/>
+                </section>
+            </div>
 
             {/*
             <section className="py-16 bg-white">

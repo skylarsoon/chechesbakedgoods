@@ -19,7 +19,7 @@ const CommissionStatus = () => {
     if (accepting === null) return <p>Loading...</p>;
 
     return (
-        <div className="border-1 rounded-2xl w-100 p-8 m-8 text-center">
+        <div className="border-1 rounded-2xl w-100 p-8 m-8 text-center bg-emerald-100 shadow-2xl">
             <h2>
                 {accepting ? "Commissions are currently open ✅ ": "Commissions are currently closed. Feel free to inquire with questions though <3" }
             </h2>

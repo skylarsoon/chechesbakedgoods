@@ -30,7 +30,7 @@ export default function Contact () {
 
     return(
         <>
-            <div className="bg-lime-100 py-20 text-center">
+            <div className="bg-lime-100 font-display py-20 text-center">
                 <header className="text-4xl font-extrabold mb-4">
                     Have a question or want to place an order?
                 </header>

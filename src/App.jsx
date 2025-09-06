@@ -8,22 +8,25 @@ import Menu from './pages/Menu.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Admin from './pages/Admin.jsx'
 import TestFirebase from './pages/testFirebase.jsx';
+import Copyright from './components/Copyright.jsx';
+import Login from './pages/Login.jsx';
 
 function App() {
 
   return (
     <>
-      <div className="h-screen bg-lime-50">
+      <div>
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/admin" element={<Admin />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/test" element={<TestFirebase />} />
           <Route path="*" element={<NotFound/>}/>
         </Routes> 
-        <p>Copyright &#169; Rachel Asa</p>
+        <Copyright></Copyright>
       </div>
     </>
   );

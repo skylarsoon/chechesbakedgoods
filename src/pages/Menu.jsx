@@ -19,14 +19,14 @@ export default function Contact () {
         <>  
             {console.log(data)}
             <div className="bg-lime-50 py-20 text-center">
-                <header className="text-4xl font-extrabold mb-4">
+                <header className="font-display text-4xl font-extrabold mb-4">
                     Gallery
                 </header>
                 <div className="flex p-24 m-8 space-x-8">
                     {data?.map((image) => (
                         <div className="bg-lime-200 rounded-lg shadow p-8 text-center" key={image.createdAt}>
                             <img className="w-full h-40 object-cover rounded" src={image.imageUrl} />
-                            <h1 className="text-sm text-gray-600">{image.caption}</h1>
+                            <h1 className="font-display text-sm text-gray-600">{image.caption}</h1>
                         </div>
                     ))}
                 </div>

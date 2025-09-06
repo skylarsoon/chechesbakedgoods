@@ -10,6 +10,15 @@
   --font-display: "Quicksand", "sans-serif";
 }
 
+body {
+  background-color: #f7fee7; /* Replace with your desired default color */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  height: 100vh; /* Ensure body takes full viewport height */
+  width: 100vw; /* Ensure body takes full viewport width */
+}
+
+
 
 /* @import "tailwindcss";
 
